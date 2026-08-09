@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "batch_id": "6880174d-520c-45ab-b906-e2de54c81608",
+  "period_start": "2026-08-01",
+  "period_end": "2026-08-06",
+  "netlab_version": "26.7",
+  "metrics": [
+    {
+      "dimension": "provider",
+      "item": "clab",
+      "observations": 12,
+      "instances": 12,
+      "maximum": 1
+    },
+    {
+      "dimension": "device",
+      "item": "eos",
+      "observations": 10,
+      "instances": 48,
+      "maximum": 8
+    }
+  ]
+}
