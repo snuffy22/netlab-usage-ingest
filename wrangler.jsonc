@@ -1,5 +1,6 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
+  // This file is retained as declarative Worker/Pyodide metadata.
+  // The Node.js Wrangler CLI is not used by this repository.
   "name": "netlab-usage-ingest",
   "main": "src/entry.py",
   "compatibility_date": "2026-08-06",
@@ -32,7 +33,10 @@
   ],
   "triggers": {
     "crons": ["17 3 * * *"]
+  },
+  "python_modules": {
+    "excludes": ["**/*.pyc", "**/__pycache__/**"]
   }
-  // After validating workers.dev, add:
-  // "routes": [{ "pattern": "usage.netlab.tools", "custom_domain": true }]
+  // After validating workers.dev, add your custom-domain route using the
+  // Cloudflare dashboard/API. The Node-free CLI intentionally does not alter routes.
 }
