@@ -107,10 +107,12 @@ class CloudflareAPI:
             f"/accounts/{self.account_id}/workers/scripts/"
             f"{quote(script_name, safe='')}/subdomain"
         )
-        if enabled:
-            self._json(self._client.post(path))
-        else:
-            self._json(self._client.delete(path))
+        self._json(
+            self._client.post(
+                path,
+                json={"enabled": enabled},
+            )
+        )
 
     def set_cron_triggers(self, script_name: str, crons: Iterable[str]) -> None:
         self._json(

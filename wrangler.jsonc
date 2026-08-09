@@ -3,7 +3,7 @@
   // The Node.js Wrangler CLI is not used by this repository.
   "name": "netlab-usage-ingest",
   "main": "src/entry.py",
-  "compatibility_date": "2026-08-06",
+  "compatibility_date": "2026-07-01",
   "compatibility_flags": ["python_workers"],
   "workers_dev": true,
   "observability": {
