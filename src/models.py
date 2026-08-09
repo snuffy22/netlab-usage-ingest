@@ -5,11 +5,11 @@ import re
 from typing import Annotated, Literal
 
 from pydantic import (
+    UUID4,
     BaseModel,
     ConfigDict,
     Field,
     StringConstraints,
-    UUID4,
     field_validator,
     model_validator,
 )

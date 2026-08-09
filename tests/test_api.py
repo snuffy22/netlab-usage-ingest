@@ -3,9 +3,8 @@ from __future__ import annotations
 import copy
 from types import SimpleNamespace
 
-from fastapi.testclient import TestClient
-
 from conftest import FakeD1, FakeLimiter
+from fastapi.testclient import TestClient
 
 
 def payload() -> dict:

@@ -3,6 +3,7 @@ from __future__ import annotations
 import asyncio
 
 from conftest import FakeD1
+
 from models import UsageSubmission
 from storage import ingest_submission
 
